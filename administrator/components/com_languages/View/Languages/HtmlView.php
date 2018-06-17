@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\Helper\ContentHelper;
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\Component\Languages\Administrator\Helper\LanguagesHelper;
+use Joomla\Registry\Registry;
 
 /**
  * HTML Languages View class for the Languages component.
@@ -168,6 +169,7 @@ class HtmlView extends BaseHtmlView
 			'a.lang_code'    => \JText::_('COM_LANGUAGES_FIELD_LANG_TAG_LABEL'),
 			'a.sef'          => \JText::_('COM_LANGUAGES_FIELD_LANG_CODE_LABEL'),
 			'a.image'        => \JText::_('COM_LANGUAGES_HEADING_LANG_IMAGE'),
+			'a.fallback_lang'=> \JText::_('COM_LANGUAGES_HEADING_FALLBACK_LANGUAGE'),
 			'a.access'       => \JText::_('JGRID_HEADING_ACCESS'),
 			'a.lang_id'      => \JText::_('JGRID_HEADING_ID')
 		);
